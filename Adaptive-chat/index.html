@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>Chat App Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--  
+        MOBILE ONLY
+        - display
+        - position
+        + meta viewport
+        + media -> piscture+img
+        + UX/UI -> touch: portrait/landscape
+        HW* recomendation: 
+        !variables (color)
+        !css units (vmin, vmax)
+    HW1: contact list: ol vs ul? arguments
+        ul-lista neordonata iar ol -lista ordonata
+        Chat messages nu este o lista ordonata ceea ce este evident 
+
+    HW2: make layout 1 contact:
+    1. html +semantic
+    2. spatces, align, mode, units: arguments
+    -->
+    <!--wrapper-->
+    <div class="phone">
+        <section class="app">
+            <header></header>
+            <main>
+                <ul class="contacts">
+                    <li>
+                        <!--Am ales o lista neordonata, cu un <li> si aceasta lista va prezenta un contact, in el se plaseaza mai multe elemente adica 
+                            elemente de baza si dupa aceea daca va fi necesar revin si mai adaug elemente cum de altfel (div)-->
+
+                        <div class="container"> <!--
+                                                 Am folosit div ca ma ajuta sa gestionez mai bine cu structura,
+                                                 am nevoie de un container mai flexibil și mai generic-->
+                                                <!-- figure si figcaptione s-ar mai fi potrivit aici (probabil :D)
+                                                -->
+
+                            <img src="img/avatar.png" alt="Avatar" >
+                            <h2>Thomas Jane</h2>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <span class="time-right">11:00</span>
+                          </div>
+                    </li>
+                </ul>
+            </main>
+            <footer></footer>
+        </section>
+    </div>  
+    
+</body>
+</html>
